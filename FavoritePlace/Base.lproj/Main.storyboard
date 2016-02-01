@@ -5,6 +5,22 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -80,25 +96,185 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDB-7Q-Tex">
+                                <rect key="frame" x="215" y="522" width="171" height="36"/>
+                                <color key="backgroundColor" red="0.93563574552536011" green="0.22751417756080627" blue="0.13923555612564087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="CdF-km-1bd"/>
+                                    <constraint firstAttribute="height" constant="36" id="L8O-Ae-WMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="FIND OUT MORE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gc7-Ee-sJV" kind="show" id="Sdt-41-qy4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cDB-7Q-Tex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3c7-xV-ut2"/>
                             <constraint firstAttribute="trailing" secondItem="2zf-bw-uch" secondAttribute="trailing" id="4mV-kP-1IQ"/>
                             <constraint firstItem="Nym-w3-esu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ENi-fq-ZtZ"/>
                             <constraint firstItem="Nym-w3-esu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gdA-8O-Bhx"/>
                             <constraint firstItem="2zf-bw-uch" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hU6-f5-rLY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cDB-7Q-Tex" secondAttribute="bottom" constant="40" id="lng-e5-1nr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2zf-bw-uch" secondAttribute="bottom" id="she-gK-tAo"/>
                             <constraint firstItem="2zf-bw-uch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xfx-gk-qOA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreButton" destination="cDB-7Q-Tex" id="4m3-Dg-PlU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="306"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Kih-A3-RbA">
+            <objects>
+                <viewController id="Gc7-Ee-sJV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EyG-Xl-q1o"/>
+                        <viewControllerLayoutGuide type="bottom" id="gKv-pd-7Aq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fo-Er-oSn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Yucca2" translatesAutoresizingMaskIntoConstraints="NO" id="Mba-EX-lPv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="1si-KG-1Jq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT YUCCA VALLEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-0v-G7V">
+                                <rect key="frame" x="203" y="68" width="195" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Wck-OC-CDI"/>
+                                    <constraint firstAttribute="width" constant="195" id="dKR-y7-uXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="nzj-cb-Nia">
+                                <rect key="frame" x="20" y="194" width="560" height="388"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7gX-fv-Uhe">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="173"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="POPULATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-qm-hXy">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="153"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="E61-Iv-lcF"/>
+                                                    <constraint firstAttribute="width" constant="195" id="LbD-Yi-NDe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="E61-Iv-lcF"/>
+                                                        <exclude reference="LbD-Yi-NDe"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="20,700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta8-h4-q5m">
+                                                <rect key="frame" x="0.0" y="153" width="52" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="195" id="4Gd-p8-y18"/>
+                                                    <constraint firstAttribute="height" constant="21" id="iQs-st-EbX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="iQs-st-EbX"/>
+                                                        <exclude reference="4Gd-p8-y18"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sft-Fs-o52">
+                                        <rect key="frame" x="0.0" y="173" width="560" height="216"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1J-LY-eXp">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="195" id="3zA-3K-R2t"/>
+                                                    <constraint firstAttribute="height" constant="21" id="5Ji-ze-48b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5Ji-ze-48b"/>
+                                                        <exclude reference="3zA-3K-R2t"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnz-YN-4xm">
+                                                <rect key="frame" x="0.0" y="37" width="560" height="179"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="195" id="g9k-3g-ZIq"/>
+                                                    <constraint firstAttribute="height" constant="21" id="nwt-eX-zNX"/>
+                                                </constraints>
+                                                <mutableString key="text">Norman J. Essig was a key player in the late 1950s in working toward establishing Yucca Valley as a place for entertainment celebrities to come and live in privacy. He personally acquired hundreds of acres of land during this time and owned and ran Glenn Realty. He helped to put in the main roads that are running throughout the town off of Hwy 62. He was personal friends with Jimmy Van Heusen and gave him prime real estate in Yucca Valley to build his house which can still be seen atop the highest hill in the center of the town. He is survived by his two daughters Jean Essig and Marie Hodge and seven grandchildren.</mutableString>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="nwt-eX-zNX"/>
+                                                        <exclude reference="g9k-3g-ZIq"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAt-L3-F5J">
+                                <rect key="frame" x="20" y="8" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mba-EX-lPv" firstAttribute="leading" secondItem="2fo-Er-oSn" secondAttribute="leading" id="3tJ-yc-RZm"/>
+                            <constraint firstItem="nzj-cb-Nia" firstAttribute="top" secondItem="Mba-EX-lPv" secondAttribute="bottom" constant="40" id="5Is-5c-F3R"/>
+                            <constraint firstAttribute="trailing" secondItem="Mba-EX-lPv" secondAttribute="trailing" id="BkL-9b-HeS"/>
+                            <constraint firstItem="hVN-0v-G7V" firstAttribute="top" secondItem="EyG-Xl-q1o" secondAttribute="bottom" constant="48" id="H2R-jc-SCD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nzj-cb-Nia" secondAttribute="trailing" id="T49-DI-NwD"/>
+                            <constraint firstItem="nzj-cb-Nia" firstAttribute="leading" secondItem="2fo-Er-oSn" secondAttribute="leadingMargin" id="bI3-Md-gkf"/>
+                            <constraint firstItem="gKv-pd-7Aq" firstAttribute="top" secondItem="nzj-cb-Nia" secondAttribute="bottom" constant="20" id="d34-yw-yjy"/>
+                            <constraint firstItem="hVN-0v-G7V" firstAttribute="centerX" secondItem="2fo-Er-oSn" secondAttribute="centerX" id="qXP-4Q-6Dq"/>
+                            <constraint firstItem="nzj-cb-Nia" firstAttribute="top" secondItem="Mba-EX-lPv" secondAttribute="bottom" constant="40" id="qxt-d1-S5X"/>
+                            <constraint firstItem="Mba-EX-lPv" firstAttribute="top" secondItem="2fo-Er-oSn" secondAttribute="top" id="sOr-mT-F2o"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qxt-d1-S5X"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5S-yU-6lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="306"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Compass" width="35" height="35"/>
         <image name="Yucca" width="1700" height="1133"/>
+        <image name="Yucca2" width="550" height="366"/>
     </resources>
 </document>
