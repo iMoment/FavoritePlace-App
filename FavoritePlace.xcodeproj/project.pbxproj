@@ -14,6 +14,7 @@
 		91B2A9C41C5F5FB800157AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B2A9C21C5F5FB800157AA9 /* LaunchScreen.storyboard */; };
 		91B2A9CF1C5F5FB800157AA9 /* FavoritePlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2A9CE1C5F5FB800157AA9 /* FavoritePlaceTests.swift */; };
 		91B2A9DA1C5F5FB800157AA9 /* FavoritePlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2A9D91C5F5FB800157AA9 /* FavoritePlaceUITests.swift */; };
+		91B2A9E81C5F723E00157AA9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2A9E71C5F723E00157AA9 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		91B2A9D51C5F5FB800157AA9 /* FavoritePlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritePlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B2A9D91C5F5FB800157AA9 /* FavoritePlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlaceUITests.swift; sourceTree = "<group>"; };
 		91B2A9DB1C5F5FB800157AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B2A9E71C5F723E00157AA9 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				91B2A9C01C5F5FB800157AA9 /* Assets.xcassets */,
 				91B2A9C21C5F5FB800157AA9 /* LaunchScreen.storyboard */,
 				91B2A9C51C5F5FB800157AA9 /* Info.plist */,
+				91B2A9E71C5F723E00157AA9 /* DetailVC.swift */,
 			);
 			path = FavoritePlace;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				91B2A9BC1C5F5FB800157AA9 /* ViewController.swift in Sources */,
 				91B2A9BA1C5F5FB800157AA9 /* AppDelegate.swift in Sources */,
+				91B2A9E81C5F723E00157AA9 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
